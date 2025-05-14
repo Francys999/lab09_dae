@@ -1,4 +1,4 @@
-function SerieComponent() {
+function SerieComponent(props) {
     return (
         <div className="card">
             <img 
@@ -7,8 +7,8 @@ function SerieComponent() {
                 alt="img" 
             />
             <div className="card-body">
-                <h5 className="card-title">Law & orden</h5>
-                <p className="card-text">Drama</p>
+                <h5 className="card-title">{props.nombre}</h5>
+                <p className="card-text">{props.categoria}</p>
                 <button className="btn btn-primary">Description</button>
             </div>
         </div>
